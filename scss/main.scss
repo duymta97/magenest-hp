@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.header {
+    background-image: url(../images/Layer4.png);
+    width: 100%;
+    height: 978px;
+
+    &_logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+
+        form {
+            margin: 3px 0;
+
+            input {
+                border-radius: 15px;
+                background-color: #006341;
+                color: #ffffff;
+                border: none;
+                outline: none;
+                height: 32px;
+                width: 420px;
+
+                // margin-top: 3px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: #ffffff;
+                }
+            }
+
+            .searchbutton {
+                position: absolute;
+                top: 7.5px;
+                width: 52px;
+                height: 52px;
+                background-color: #ae100f;
+                color: #ffffff;
+                outline: none;
+                border: none;
+                border-radius: 50%;
+                transform: translateX(-100%);
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    content: " ";
+                    width: 11px;
+                    height: 11px;
+                    background-color: #ae100f;
+                    top: -5.5px;
+                    right: 20.5px;
+                    border-radius: 50%;
+                }
+
+                &::before {
+                    display: block;
+                    position: absolute;
+                    content: " ";
+                    width: 5px;
+                    height: 5px;
+                    border: solid 1px #ae100f;
+                    top: -8px;
+                    right: 24px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    &_nav {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: #666666;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 35px;
+            }
+        }
+
+        &__cart {
+            color: #666666;
+
+            span:first-child {
+                margin-right: 15px;
+            }
+
+            i {
+                margin: 0 52px 0 78px;
+            }
+        }
+    }
+}
+
+.giftcardpro {
+    text-align: center;
+    font-size: 16px;
+    height: 270px;
+    background-image: url(../images/Layer5.png);
+    background-repeat: no-repeat;
+    background-position: 1070px;
+    background-position-y: 10px;
+
+    h2 {
+        padding: 115px 0 0 0;
+        color: #ae100f;
+        font-weight: 900;
+    }
+
+    span {
+        display: inline-block;
+        font-weight: 900;
+        margin-top: 52px;
+    }
+
+    p {
+        margin: 20px 0 0 0;
+        font-size: 14px;
+    }
+}
+
+.producegift {
+    text-align: center;
+    background-image: url(../images/Background.png);
+    background-blend-mode: color;
+    padding: 180px 0 120px 0;
+
+    h2 {
+        color: #ae100f;
+    }
+
+    &_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item {
+            width: 380px;
+            height: 256px;
+            margin-top: 60px;
+
+            .cardinfo {
+                width: 100%;
+                height: 100%;
+                display: none;
+                position: relative;
+                padding: 52px 0 0 0;
+
+                span {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    color: #ae100f;
+                }
+
+                h4 {
+                    color: #006341;
+                }
+
+                p {
+                    color: #666666;
+                }
+
+                a {
+                    color: #ae100f;
+                    text-decoration: underline #ae100f;
+                }
+            }
+
+            &:hover {
+                img {
+                    display: none;
+                }
+
+                .cardinfo {
+                    color: red;
+                    display: block;
+                    background-color: #ffffff;
+                }
+            }
+
+            h3 {
+                color: #ae100f;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 15px 0 0 0;
+            }
+        }
+    }
+}
+
+.servicesupport {
+    text-align: center;
+    padding-top: 120px;
+
+    h2 {
+        color: #ae100f;
+    }
+
+    &_nav {
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            width: 500px;
+            height: 120px;
+            border: solid 1px #a1a1a1;
+            border-radius: 5px;
+            font-family: 'Charm', cursive;
+            padding: 40px;
+            margin: 0 40px 25px 0;
+            color: #006341;
+
+            &:nth-child(1) {
+                color: #ffffff;
+                background-color: #006341;
+                box-shadow: 0 0 0 10px #d6e8e1db;
+            }
+
+            &:nth-child(3) {
+                margin-left: 130px;
+            }
+
+            &:nth-child(4) {
+                margin: 0;
+            }
+
+            i {
+                font-size: 48px;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+.videoug {
+    height: 720px;
+    padding: 35px 0;
+    margin-top: 120px;
+    background-image: url(../images/VideoUG.png);
+}
+
+.seewhat {
+    padding-top: 90px;
+    text-align: center;
+
+    h2 {
+        color: #ae100f;
+    }
+
+    p {
+        margin-top: 30px 0 0 0;
+        color: #006341;
+        font-family: 'Charm';
+    }
+
+    &_info {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        &__item {
+            width: 380px;
+            height: 220px;
+            padding: 15px;
+            background-color: #f2f7f5;
+            text-align: right;
+            position: relative;
+
+            .star {
+                color: #f2b827;
+            }
+
+            .quote {
+                font-size: 55px;
+                position: absolute;
+                color: #ffffff;
+            }
+
+            p {
+                margin: 10px 0 0 0;
+                color: unset;
+                font-family: unset;
+                font-size: 12px;
+            }
+
+            p:last-child {
+                margin: 25px 0 0 0;
+                text-align: justify;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.more {
+    margin-top: 90px;
+    height: 520px;
+    background: url(../images/Layer17.png) top no-repeat, url(../images/Rectangle4.png) bottom no-repeat;
+
+    &_info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        &__item {
+            color: #ffffff;
+            padding-top: 250px;
+            width: 285px;
+
+            h3 {
+                font-family: 'Charm';
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    padding: 5px;
+
+                    a {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    color: #ffffff;
+    padding: 15px;
+    background-color: #66a08c;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
